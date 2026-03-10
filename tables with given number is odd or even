@@ -1,0 +1,7 @@
+a=int(input("Enter the Number: "))
+if (a%2==0):
+    for i in range (1,11):
+        print("{}*{}={}".format(i,a,i*a))
+else:
+    for i in range(1,16):
+        print("{}*{}={}".format(i,a,i*a))
