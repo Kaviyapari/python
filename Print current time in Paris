@@ -1,0 +1,5 @@
+import pytz #Python time zone
+from datetime import datetime
+a=pytz.timezone('Europe/Paris')
+b=datetime.now(a)
+print(b)
