@@ -1,0 +1,19 @@
+a=[[" "for i in range(11)] for i in range(11)]
+
+#manipulation
+for i in range(11):
+    for j in range(11):
+        if(j==0):
+            a[i][j]="*"
+        if(j==10):
+            a[i][j]="*"
+        elif(i==j and j<6):
+            a[i][j]="*"
+        elif(i+j==10 and i<5):
+            a[i][j]="*"
+
+#Grid display
+for i in range(11):
+    for j in range(11):
+        print(a[i][j],end="")
+    print()
