@@ -1,0 +1,13 @@
+name=['Anu','Ram','Raj','Bala','Ben']
+marks=[[80,50,60],[60,70,77],[67,87,97],[50,60,75],[44,55,67]]
+for i in range(5):
+    per=sum(marks[i])//3
+    if(per>90):
+        g='S'
+    elif(per>60 and per<90):
+        g='A'
+    elif(per>40 and per<60):
+        g='B'
+    else:
+        g='F'
+    print("{}.{}-{}-{}".format((i+1),name[i],per,g))   
