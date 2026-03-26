@@ -1,0 +1,13 @@
+print("--Real Time Calculator--")
+print("Type 'Exit'to stop")
+while True:
+    a=input("Enter Expression:")
+    if a.lower()=="exit":
+        print("Calculator Closed")
+        break
+    try:
+        result=eval(a)
+        print("Result:",result)
+    except:
+        print("invalid expression")
+    
